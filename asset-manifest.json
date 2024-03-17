@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-State-Classes/static/css/main.ebaf302f.css",
+    "main.js": "/React-State-Classes/static/js/main.1a37de4b.js",
+    "index.html": "/React-State-Classes/index.html",
+    "main.ebaf302f.css.map": "/React-State-Classes/static/css/main.ebaf302f.css.map",
+    "main.1a37de4b.js.map": "/React-State-Classes/static/js/main.1a37de4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebaf302f.css",
+    "static/js/main.1a37de4b.js"
+  ]
+}
