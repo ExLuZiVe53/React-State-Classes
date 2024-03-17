@@ -19,7 +19,7 @@ class App extends Component {
     todos: initialTodos,
   };
 
-  onDeleteTodo = (todoId) => {
+  deleteTodo = (todoId) => {
     this.setState((prevState) => ({
       todos: prevState.todos.filter((todo) => todo.id !== todoId),
     }));
@@ -44,7 +44,7 @@ class App extends Component {
           <p>Total of todo:{totalTodoCount}</p>
           <p>Number of completed todo:{completedTodoCount}</p>
         </div>
-        <TodoList todos={initialTodos} onClick={this.onDeleteTodo} />
+        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       </>
     );
   }
