@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./TodoList.css";
 
 const TodoList = ({ todos, onDeleteTodo }) => {
@@ -13,6 +14,15 @@ const TodoList = ({ todos, onDeleteTodo }) => {
       })}
     </ul>
   );
+};
+
+TodoList.propTypes = {
+  todos: PropTypes.arrayOf({
+    id: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    completed: PropTypes.bool.isRequired,
+  }),
+  onDeleteTodo: PropTypes.func,
 };
 
 export default TodoList;
