@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 import "./ColorPicker.css";
 
 class ColorPicker extends Component {
@@ -44,8 +45,6 @@ class ColorPicker extends Component {
 /*
  border: index===this.state.activeOptionsIdx ? "2px solid black" : "none"}}
          
-
-
 const ColorPicker = ({ options }) => (
    <div className="ColorPicker">
       <h2 className="ColorPicker__title">Color Picker</h2> 
@@ -59,4 +58,13 @@ const ColorPicker = ({ options }) => (
   </div>
 );
 */
+
+ColorPicker.propTypes = {
+  options: (PropTypes.arrayOf = {
+    label: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    index: PropTypes.number,
+  }),
+};
+
 export default ColorPicker;
